@@ -26,14 +26,12 @@ void Laboratorio::mostrar(){
     cout<<endl;
     
     for(int i = 0; i<cont; i++){
-        cout << equipos[i];
+        cout<<endl<<"Sistema Operativo: "<< equipos[i].getOs()<<endl;
+        cout<<endl<<"Procesador: "<< equipos[i].getCpu()<<endl;
+        cout<<endl<<"RAM: "<< equipos[i].getRam()<<endl;
+        cout<<endl<<"Tarjeta grafica: "<< equipos[i].getGpu()<<endl<<endl;
     }
 
-}
-
-Laboratorio& operator << (Laboratorio &l, const Computadora &c){
-    l.agregarFinal(c);
-    return l;
 }
 
 

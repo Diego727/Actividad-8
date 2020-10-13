@@ -42,28 +42,3 @@ string Computadora::getRam(){
 string Computadora::getGpu(){
     return gpu;
 }
-
-ostream& operator << (ostream &out, const Computadora &c){
-    out << left;
-    out << setw(15) << c.os;
-    out << setw(15) << c.cpu;
-    out << setw(10) << c.ram;
-    out << setw(10) << c.gpu;
-    out << endl;
-    return out;
-}
-
-istream& operator >> (istream &in, Computadora &c){
-    
-    cout << "Sistema operativo: ";
-    getline(cin, c.os);
-    cout << "Procesador: ";
-    getline(cin,c.cpu);
-    cout<< "RAM: ";
-    getline(cin, c.ram);
-    cout<< "Tarjeta grafica: ";
-    getline(cin, c.gpu);
-    cout<<endl;
-
-    return in;
-}

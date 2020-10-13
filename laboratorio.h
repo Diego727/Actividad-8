@@ -14,8 +14,6 @@ class Laboratorio{
         Laboratorio();
         void agregarFinal(const Computadora&);
         void mostrar();
-
-        friend Laboratorio& operator << (Laboratorio&, const Computadora&);
 };
 
 #endif // LABORATORIO_H

@@ -28,10 +28,7 @@ class Computadora{
         string getOs();
         string getCpu();
         string getRam();
-        string getGpu();
-
-        friend ostream& operator << (ostream&, const Computadora&);
-        friend istream& operator >> (istream&, Computadora&); 
+        string getGpu(); 
 
 };
 
