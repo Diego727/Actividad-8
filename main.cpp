@@ -15,9 +15,12 @@ int main()
     c2.setGpu("GTX 1080");
 
     Laboratorio l1;
-    l1.agregarFinal(c1);
-    l1.agregarFinal(c2);
+    l1 << c1 << c2;
 
+    Computadora c3,c4;
+    cin >> c3;
+    cin >> c4;
+    l1<< c3 << c4;
+    
     l1.mostrar();
-
 }

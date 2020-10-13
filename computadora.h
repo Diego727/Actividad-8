@@ -3,29 +3,35 @@
 
 #include <iostream>
 #include <string>
+#include <iomanip>
+
+using namespace std;
 
 class Computadora{
     private:
-        std::string os;
-        std::string cpu;
-        std::string ram;
-        std::string gpu;
+        string os;
+        string cpu;
+        string ram;
+        string gpu;
 
     public:
         Computadora();
-        Computadora(std::string,std::string,std::string,std::string);
+        Computadora(string,string,string,string);
 
         //Setters
-        void setOs(const std::string&);
-        void setCpu(const std::string&);
-        void setRam(const std::string&);
-        void setGpu(const std::string&);
+        void setOs(const string&);
+        void setCpu(const string&);
+        void setRam(const string&);
+        void setGpu(const string&);
 
         //Getters
-        std::string getOs();
-        std::string getCpu();
-        std::string getRam();
-        std::string getGpu();
+        string getOs();
+        string getCpu();
+        string getRam();
+        string getGpu();
+
+        friend ostream& operator << (ostream&, const Computadora&);
+        friend istream& operator >> (istream&, Computadora&); 
 
 };
 
