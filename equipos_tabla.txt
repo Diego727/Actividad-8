@@ -1,0 +1,5 @@
+OS             CPU            RAM       GPU       
+Windows 98     Ryzen 3950x    128 Gb    RTX 2080  
+Windows 10     Intel i7 6700  16 Gb     GTX 1080  
+Windows 8      Ryzen 5 1600   12 Gb     GTX 750 TI
+Windows 7      Intel i5-L16G7 8 Gb      GTX 1050 TI
